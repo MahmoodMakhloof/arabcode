@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabcode</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="hero-section">
+            <div class="nav-container">
+                <img src="images/arabcode_.png" alt="Your Logo" class="logo">
+                <button class="drawer-icon" onclick="toggleDrawer()">☰</button> <!-- Drawer icon button -->
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#portfolio">آخر أعمالنا</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="welcome-message">
+                <h1>مرحبا بك في شركتنا</h1>
+                <p>نجاحك الرقمي يبدأ من هنا</p>
+                <a href="#services" class="cta-button">اكتشف خدماتنا</a>
+            </div>
+        </div>
+        <div class="drawer" id="drawer">
+            <ul class="drawer-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#portfolio">آخر أعمالنا</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>خدماتنا</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <i class="fas fa-bullhorn"></i>
+                <h3>التسويق الرقمي</h3>
+                <p>نساعدك على تحقيق نجاحك الرقمي من خلال استراتيجيات تسويقية مبتكرة تضمن وصولك إلى جمهورك المستهدف
+                    وزيادة التفاعل مع علامتك التجارية.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>تصميم وتطوير تطبيقات الموبايل</h3>
+                <p>نصمم ونطور تطبيقات جوال مبتكرة تعمل على أنظمة iOS و Android، لتساعدك على الوصول إلى جمهور أوسع وتحقيق
+                    النجاح الرقمي.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3>تصميم وبرمجة المواقع الالكترونية</h3>
+                <p>نقوم بتطوير حلول ويب مخصصة تلبي احتياجاتك، مع واجهات سهلة الاستخدام وأداء عالٍ يضمن تجربة مميزة
+                    للمستخدم.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>آخر أعمالنا</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/proj1.png" alt="Project 1">
+                <p>تطبيق تسوق يقوم بتحويل كتيبات PDF إلى منتجات قابلة للبحث والتفاعل باستخدام الذكاء الاصطناعي. يسهل على
+                    المستخدمين تصفح المنتجات والعروض والشراء بنقرة واحدة.</p>
+                <button class="store-button" onclick="redirectToStore()">تجربة التطبيق</button>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/proj2.png" alt="Project 2">
+                <p>تطبيق طبي في المملكة العربية السعودية يهدف إلى تسهيل الوصول إلى الرعاية الصحية من خلال تقديم خصومات
+                    على الخدمات الطبية وإمكانية حجز المواعيد بسهولة.</p>
+                <button class="store-button" onclick="redirectToStore()">تجربة التطبيق</button>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/proj3.png" alt="Project 3">
+                <p>تطبيق تجارة إلكترونية لمتجر مجوهرات رائد في السعودية. يتيح للمستخدمين استكشاف وشراء المجوهرات الذهبية
+                    والفضية بطرق دفع مختلفة بكل سهولة وأمان.</p>
+                <button class="store-button" onclick="redirectToStore()">تجربة التطبيق</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <h2>موقعنا</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29315.06389345929!2d49.249477664068905!3d23.30185920462774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e3ee5160e800a8d%3A0x964ecb8975599791!2z2KfZhNiu2YYg2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1729366403181!5m2!1sar!2seg"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2>تواصل معنا</h2>
+        <p>البريد الالكتروني: info@yourcompany.com</p>
+        <p>رقم الهاتف: +123 456 7890</p>
+        <p>العنوان: المملكة العربية السعودية - مدينة الاحساء </p>
+        <!-- WhatsApp Contact Button -->
+        <a href="https://wa.me/YOUR_PHONE_NUMBER" class="contact-us-button" target="_blank">
+            <i class="fab fa-whatsapp"></i> تواصل معنا عبر واتساب
+        </a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
