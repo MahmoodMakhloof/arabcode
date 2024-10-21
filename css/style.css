@@ -49,7 +49,7 @@ header {
     background: none; /* No background */
     border: none; /* No border */
     color: white; /* Icon color */
-    font-size: 70px; /* Icon size */
+    font-size: 40px; /* Icon size */
     cursor: pointer; /* Cursor on hover */
     display: none; /* Hidden by default */
 }
